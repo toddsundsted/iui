@@ -306,6 +306,18 @@ fieldset > .row:last-child {
   width: 25px;
 }
 
+.row > textarea {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    border: none;
+    padding: 12px 10px 0 10px;
+    height: 98px;
+    font-size: 14px;
+    background: none;
+}
+
 .row > label {
     position: absolute;
     margin: 0 0 0 14px;
