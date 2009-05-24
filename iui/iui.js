@@ -349,6 +349,9 @@ function slidePages(fromPage, toPage, backwards)
     scrollTo(0, 1);
     clearInterval(checkTimer);
     
+    if (toPage.getAttribute("beforeload"))
+        eval(toPage.getAttribute("beforeload"));
+
     var percent = 100;
     slide();
     var timer = setInterval(slide, slideInterval);
@@ -364,6 +367,9 @@ function slidePages(fromPage, toPage, backwards)
             clearInterval(timer);
             checkTimer = setInterval(checkOrientAndLocation, 300);
             setTimeout(updatePage, 0, toPage, fromPage);
+
+            if (toPage.getAttribute("afterload"))
+                eval(toPage.getAttribute("afterload"));
         }
     
         if (axis == "y")
