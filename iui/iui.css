@@ -126,6 +126,7 @@ body[orient="landscape"] > .toolbar > h1 {
     font-size: 20px;
     font-weight: bold;
     text-decoration: inherit;
+    margin-bottom: 10px;
     color: inherit;
 }
 
