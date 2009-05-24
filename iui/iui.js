@@ -407,6 +407,7 @@ function encodeForm(form)
     encode(form.getElementsByTagName("input"));
     encode(form.getElementsByTagName("textarea"));
     encode(form.getElementsByTagName("select"));
+    encode(form.getElementsByTagName("textarea"));
     return args;    
 }
 
