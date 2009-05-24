@@ -407,6 +407,41 @@ fieldset > .row:last-child {
 
 /************************************************************************************************/
 
+fieldset > ul > li {
+    position: relative;
+    margin: 0 0 0 -40px;
+    border-top: 1px solid #E0E0E0;
+    padding: 8px 0 8px 10px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+}
+
+fieldset > ul {
+    margin: 0 0;
+}
+
+fieldset > ul > li:first-child {
+    top: 0;
+    border-top: none;
+}
+
+fieldset > ul > li > a {
+    display: block;
+    margin: -8px 0 -8px -10px;
+    padding: 8px 32px 8px 10px;
+    text-decoration: none;
+    color: inherit;
+    background: url(/images/listArrow.png) no-repeat right center;
+}
+
+fieldset > ul > li > a > img {
+    padding: 0 8px 0 0;
+}
+
+/************************************************************************************************/
+
 #preloader {
     display: none;
     background-image: url(loading.gif), url(selection.png),
