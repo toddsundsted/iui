@@ -433,7 +433,7 @@ fieldset > ul > li > a {
     padding: 8px 32px 8px 10px;
     text-decoration: none;
     color: inherit;
-    background: url(/images/listArrow.png) no-repeat right center;
+    background: url(listArrow.png) no-repeat right center;
 }
 
 fieldset > ul > li > a > img {
