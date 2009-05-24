@@ -180,6 +180,10 @@ body > ul > li > a {
     background: url(listArrow.png) no-repeat right center;
 }
 
+body > ul > li > a > img {
+	padding: 0 8px 0 0;
+}
+
 a[target="_replace"] {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
