@@ -434,11 +434,6 @@ function replaceElementWithSource(replace, source)
 {
     var page = replace.parentNode;
     var parent = replace;
-    while (page.parentNode != document.body)
-    {
-        page = page.parentNode;
-        parent = parent.parentNode;
-    }
 
     var frag = document.createElement(parent.localName);
     frag.innerHTML = source;
