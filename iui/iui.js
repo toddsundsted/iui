@@ -195,6 +195,10 @@ addEventListener("click", function(event)
             submitForm(findParent(link, "form"));
         else if (link.getAttribute("type") == "cancel")
             cancelDialog(findParent(link, "form"));
+        else if (iui.isNativeUrl(link.href))
+        {
+            return;
+        }
         else if (link.target && $(link.target))
         {
             link.setAttribute("selected", "progress");
@@ -204,10 +208,6 @@ addEventListener("click", function(event)
         {
             link.setAttribute("selected", "progress");
             iui.showPageByHref(link.href, null, null, link, unselect);
-        }
-        else if (iui.isNativeUrl(link.href))
-        {
-            return;
         }
         else if (link.target == "_webapp" || link.target == "_self")
         {
