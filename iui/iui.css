@@ -181,7 +181,7 @@ body > ul > li > a {
 }
 
 body > ul > li > a > img {
-	padding: 0 8px 0 0;
+    padding: 0 8px 0 0;
 }
 
 a[target="_replace"] {
