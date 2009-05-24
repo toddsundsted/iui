@@ -195,6 +195,11 @@ addEventListener("click", function(event)
             submitForm(findParent(link, "form"));
         else if (link.getAttribute("type") == "cancel")
             cancelDialog(findParent(link, "form"));
+        else if (link.target && $(link.target))
+        {
+            link.setAttribute("selected", "progress");
+            iui.showPageByHref(link.href, null, null, $(link.target), unselect);
+        }
         else if (link.target == "_replace")
         {
             link.setAttribute("selected", "progress");
