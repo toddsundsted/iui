@@ -1,8 +1,7 @@
 /*
-   Copyright (c) 2007-9, iUI Project Members
-   See LICENSE.txt for licensing terms
+ * Copyright (c) 2007-9, iUI Project Members
+ * See LICENSE.txt for licensing terms
  */
-
 
 (function() {
 
@@ -395,7 +394,12 @@ function preloadImages()
 
 function submitForm(form)
 {
-    iui.showPageByHref(form.action || "POST", encodeForm(form), form.method);
+    if (form.target == "_self")
+        form.submit();
+    else if (form.target && $(form.target))
+        iui.showPageByHref(form.action || "POST", encodeForm(form), form.method, $(form.target));
+    else
+        iui.showPageByHref(form.action || "POST", encodeForm(form), form.method);
 }
 
 function encodeForm(form)
