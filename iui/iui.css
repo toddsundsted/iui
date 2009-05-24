@@ -268,7 +268,7 @@ body > .panel {
 
 .panel > fieldset {
     position: relative;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
     padding: 0;
     background: #FFFFFF;
     -webkit-border-radius: 10px;
