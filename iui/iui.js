@@ -209,7 +209,7 @@ addEventListener("click", function(event)
         {
             return;
         }
-        else if (link.target == "_webapp")
+        else if (link.target == "_webapp" || link.target == "_self")
         {
             location.href = link.href;
         }
@@ -399,7 +399,7 @@ function preloadImages()
 
 function submitForm(form)
 {
-    if (form.target == "_self")
+    if (form.target == "_webapp" || form.target == "_self")
         form.submit();
     else if (form.target && $(form.target))
         iui.showPageByHref(form.action || "POST", encodeForm(form), form.method, $(form.target));
