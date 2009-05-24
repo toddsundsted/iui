@@ -1,3 +1,10 @@
+REL-0.20-todd
+
+* Originally forked from commit 90ff811d0b22d1dcdf95de9a5404ead4c715f6bb, tagged "fork". Rebased and merged into head.
+* Merged "_webapp" and "_self" functionality. Both solve the same problem.
+* Added support for AJAX-style DOM surgery.
+* Added hooks for actions before/after page animation.
+
 REL-0.30 (TBD)
 
 * Support javascript: URLs in links (Issue 134)
